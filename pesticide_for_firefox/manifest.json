@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Pesticide for Firefox",
+  "short_name": "Pesticide",
+  "description": "This extension inserts the Pesticide CSS into the current page, outlining each element to better see placement on the page. Copyright (c) 2014 Paul Molluzzo picked up by Samuel Corsi-House.",
+  "developer": {
+    "name": "Original: Paul Molluzzo. Picked up by: Samuel Corsi-House",
+    "url": "https://github.com/mrmrs/pesticide/tree/master/pesticide_for_chrome"
+  },
+  "version": "2.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "scripts": [
+      "pesticide-injector.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "Toggle Pesticide",
+    "default_icon": {
+      "19": "images/toolbar-firefox.png",
+      "38": "images/toolbar-firefox@2x.png"
+    }
+  },
+  "icons": {
+    "128": "icon_128.png",
+    "16": "icon_16.png",
+    "48": "icon_48.png"
+  },
+  "web_accessible_resources": [
+    "pesticide.min.css",
+    "pesticide.js"
+  ]
+}
